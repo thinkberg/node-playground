@@ -1,6 +1,7 @@
-import {Component} from 'react';
+import React, {Component} from 'react';
+import { Button } from 'react-bootstrap';
 
-export default class Counter extends Component {
+export class Counter extends Component {
   constructor(props) {
     super(props);
     this.state = {counter: 0};
@@ -19,9 +20,9 @@ export default class Counter extends Component {
 
   render() {
     return (
-      <h1 style={{ color: this.props.color }}>
-        Counter ({this.props.increment}): {this.state.counter}
-      </h1>
+      <Button bsStyle="warning">
+        Counter {this.props.increment}: {this.state.counter}
+      </Button>
     );
   }
 }
