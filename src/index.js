@@ -1,5 +1,13 @@
 import React from 'react';
 import { render } from 'react-dom';
-import { App } from './app';
+import { createStore } from 'redux'
+import { Provider } from 'react-redux'
+import App from './app';
+import reducers from './redux/reducers';
 
-render(<App />, document.getElementById('root'));
+import './media-queries.css'
+
+let store = createStore(reducers);
+
+let rootElement = document.getElementById('root');
+render(<Provider store={store}><App/></Provider>, rootElement);

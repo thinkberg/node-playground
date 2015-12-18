@@ -1,5 +1,4 @@
 import React, {Component} from 'react';
-import { Button } from 'react-bootstrap';
 
 export class Counter extends Component {
   constructor(props) {
@@ -20,9 +19,9 @@ export class Counter extends Component {
 
   render() {
     return (
-      <Button bsStyle="warning">
+      <button className="primary-button pure-button">
         Counter {this.props.increment}: {this.state.counter}
-      </Button>
+      </button>
     );
   }
 }

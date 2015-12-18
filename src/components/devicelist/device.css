@@ -1,0 +1,30 @@
+.email-item {
+  padding: 0.9em 1em;
+  border-bottom: 1px solid #ddd;
+  border-left: 6px solid transparent;
+}
+
+.device-avatar-icon {
+  border-radius: 3px;
+  margin-right: 0.5em;
+}
+
+.device-name,
+.device-description {
+  margin: 0;
+}
+.device-name {
+  text-transform: uppercase;
+  color: #999;
+}
+.debice-description {
+  font-size: 80%;
+  margin: 0.4em 0;
+}
+
+.device-selected {
+  background: #eee;
+}
+.device-updated {
+  border-left: 6px solid #1b98f8;
+}

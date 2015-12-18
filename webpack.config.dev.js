@@ -21,6 +21,13 @@ module.exports = {
       test: /\.js$/,
       loaders: ['babel'],
       include: path.join(__dirname, 'src')
+    }, {
+      test: /\.css$/, // Only .css files
+      loader: 'style!css' // Run both loaders
+    },
+    {
+      test: /\.(png|jpg)$/,
+      loader: 'url-loader?limit=8192'  // inline base64 URLs for <=8k images, direct URLs for the rest
     }]
   }
 };
